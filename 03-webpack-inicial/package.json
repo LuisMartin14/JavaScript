@@ -1,0 +1,23 @@
+{
+  "name": "webpack-inicial",
+  "version": "1.0.0",
+  "description": "proyecto inicial para trabajos futuros",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --config webpack.config.js --open --port=8080"
+  },
+  "author": "Luis Mendieta",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.6.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
