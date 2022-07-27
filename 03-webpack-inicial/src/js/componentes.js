@@ -1,13 +1,18 @@
-import '../css/componentes.css';
+import "../css/componentes.css";
+// import webpacklogo from '../assets/img/webpack-logo.png'
 
+export const saludar = (nombre = "sin nombre") => {
+  console.log("creando etiqueta h1");
 
-export const saludar = ( nombre ) => {
+  const h1 = document.createElement("h1");
 
-    console.log('creando etiqueta h1');
+  h1.innerText = `Hola ${nombre}`;
 
-    const h1 = document.createElement('h1');
+  document.body.append(h1);
 
-    h1.innerText = `Hola ${ nombre }`;
+  //   img
+  //   const img = document.createElement("img");
+  //   img.src = webpacklogo;
 
-    document.body.append( h1 );
-}
+  //   document.body.append(img);
+};
